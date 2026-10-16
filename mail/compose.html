@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bench Mail · New message</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-page="compose">
+<div class="banner">Lila test site for benchmarking. Every name, address and number here is made up; nothing is sent or bought.</div>
+<header><strong>Bench Mail</strong><a href="../mail/">Inbox</a><a href="../mail/drafts.html">Drafts</a><a href="../mail/sent.html">Sent</a><a href="../mail/compose.html">Compose</a></header>
+<main>
+<h1 id="heading">New message</h1>
+<form class="card" id="compose" onsubmit="return false">
+<label for="to">To</label><input id="to" name="to"><label for="subject">Subject</label><input id="subject" name="subject">
+<label for="body">Message</label><textarea id="body" name="body"></textarea>
+<div><button type="button" id="send">Send</button><button type="button" class="plain" id="save">Save draft</button><a class="button plain" href="index.html">Discard</a> <span id="saved" class="muted"></span></div></form>
+<div class="card muted" id="quoted"></div>
+</main>
+<footer><p id="bench-record" role="note" class="record">Test record for the benchmark's checks.</p></footer>
+<script type="application/json" id="bench-data">{"mail":[{"id":"m1","from":"Marcus Lee","address":"marcus.lee@example.net","subject":"Lunch on Friday?","date":"15 Oct 2026, 09:12","body":"Are you free for lunch on Friday? The new place on 4th Street opens this week.\n\nMarcus"},{"id":"m2","from":"Dana Ortiz","address":"dana.ortiz@ortizfreight.example","subject":"Delivery window and PO","date":"15 Oct 2026, 08:47","body":"Hi,\n\nCould you confirm whether Thursday at 3 pm works for the delivery? And please send me the PO number for this order so I can put it on the paperwork.\n\nThanks,\nDana Ortiz\nOrtiz Freight"},{"id":"m3","from":"Office Team","address":"office@example.org","subject":"Office closed Monday","date":"14 Oct 2026, 16:30","body":"A reminder that the office is closed on Monday for maintenance. Work from home if you can."},{"id":"m4","from":"Dana Ortiz","address":"dana.ortiz@ortizfreight.example","subject":"Invoice 4471 paid","date":"9 Oct 2026, 11:05","body":"Just letting you know invoice 4471 was paid. No reply needed.\n\nDana"}]}</script>
+<script src="../bench.js"></script>
+</body>
+</html>

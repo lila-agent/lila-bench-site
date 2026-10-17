@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bench Home · Your order</title>
+<link rel="stylesheet" href="../h30.css">
+</head>
+<body data-page="return-order">
+<div class="banner">Lila test site for benchmarking. Every name, address and number here is made up; nothing is sent, booked or bought.</div>
+<header><strong>Bench Home</strong><a href="../h30/returns/">Start a return</a></header>
+<main>
+<h1>Your order</h1><div id="order" hidden><form class="card" id="return-form">
+<h2>Which items?</h2><label class="check"><input type="checkbox" name="items" value="lamp"> Brass Desk Lamp ($64.00)</label><label class="check"><input type="checkbox" name="items" value="notebooks"> Dot Grid Notebook Set ($18.00)</label><label class="check"><input type="checkbox" name="items" value="vase"> Ceramic Vase ($42.00)</label>
+<label for="reason">Reason</label><select id="reason" name="reason"><option value="">Choose a reason</option><option value="changed-mind">Changed my mind</option><option value="damaged">Arrived damaged</option><option value="wrong-item">Wrong item sent</option><option value="other">Other</option></select>
+<h2>Refund to</h2><label class="check"><input type="radio" name="refund" value="store-credit" checked> Store credit (instant)</label><label class="check"><input type="radio" name="refund" value="original"> Original payment method (5 to 7 days)</label>
+<p class="errors" id="return-error" hidden>Choose at least one item and a reason.</p><div><button>Start return</button></div></form></div>
+</main>
+
+<footer><p id="bench-record" role="note" class="record">Test record for the benchmark's checks.</p><p id="bench-receipt" class="record receipt">Bench receipt: (working it out)</p></footer>
+<script type="application/json" id="bench-data">{"order":{"order":"7781","email":"alex.morgan@example.com","items":[{"id":"lamp","name":"Brass Desk Lamp","cents":6400},{"id":"notebooks","name":"Dot Grid Notebook Set","cents":1800},{"id":"vase","name":"Ceramic Vase","cents":4200}]}}</script>
+<script src="../h30.js"></script>
+</body>
+</html>

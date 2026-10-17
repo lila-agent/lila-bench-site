@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bench HR · New starter form</title>
+<link rel="stylesheet" href="../h30.css">
+</head>
+<body data-page="">
+<div class="banner">Lila test site for benchmarking. Every name, address and number here is made up; nothing is sent, booked or bought.</div>
+<header><strong>Bench HR</strong><a href="../h30/hr/">New starter form</a></header>
+<main>
+<h1>New starter form</h1><p class="muted">One form for each person joining. All fields are needed.</p>
+<form class="card" data-form="starter" data-done="done.html"><div class="errors" hidden></div>
+<label for="name">Full name</label><input id="name" name="name" required data-label="Full name" autocomplete="off"><label for="email">Work email</label><input id="email" name="email" type="email" required data-label="Work email" autocomplete="off">
+<label for="phone">Phone</label><input id="phone" name="phone" type="tel" required data-label="Phone" autocomplete="off">
+<label for="department">Department</label><select id="department" name="department" required data-label="Department"><option value="">Choose a department</option><option>Engineering</option><option>Finance</option><option>Marketing</option><option>Operations</option><option>Sales</option></select>
+<label for="start">Start date</label><input id="start" name="start" type="date" required data-label="Start date">
+<label class="check"><input id="laptop" name="laptop" type="checkbox" value="yes"> Needs a laptop</label>
+<label for="manager">Manager</label><input id="manager" name="manager" required data-label="Manager" autocomplete="off"><div><button type="submit">Submit</button></div></form>
+</main>
+
+<footer><p id="bench-record" role="note" class="record">Test record for the benchmark's checks.</p><p id="bench-receipt" class="record receipt">Bench receipt: (working it out)</p></footer>
+<script src="../h30.js"></script>
+</body>
+</html>

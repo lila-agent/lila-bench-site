@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bench Vendors · Register a vendor</title>
+<link rel="stylesheet" href="../h30.css">
+</head>
+<body data-page="">
+<div class="banner">Lila test site for benchmarking. Every name, address and number here is made up; nothing is sent, booked or bought.</div>
+<header><strong>Bench Vendors</strong><a href="../h30/vendors/register.html">Register a vendor</a></header>
+<main>
+<h1>Register a vendor</h1><p class="muted">Every field is needed before we can pay a new vendor.</p>
+<form class="card" data-form="vendor" data-done="done.html"><div class="errors" hidden></div>
+<label for="company">Company name</label><input id="company" name="company" required data-label="Company name" autocomplete="off">
+<label for="contact">Contact name</label><input id="contact" name="contact" required data-label="Contact name" autocomplete="off">
+<label for="email">Contact email</label><input id="email" name="email" type="email" required data-label="Contact email" autocomplete="off">
+<label for="phone">Contact phone</label><input id="phone" name="phone" required data-label="Contact phone" autocomplete="off">
+<label for="taxId">Tax ID (EIN)</label><input id="taxId" name="taxId" required data-label="Tax ID" data-pattern="^\d{2}-\d{7}$" data-message="The Tax ID should look like 12-3456789." autocomplete="off">
+<label for="category">Category</label><select id="category" name="category" required data-label="Category"><option value="">Choose a category</option><option>Boxes and tape</option><option>Cleaning</option><option>Deliveries</option><option>Food and events</option><option>Laptops and repairs</option><option>Paper and printing</option><option>Stationery and toner</option></select>
+<div><button type="submit">Register</button></div></form>
+</main>
+
+<footer><p id="bench-record" role="note" class="record">Test record for the benchmark's checks.</p><p id="bench-receipt" class="record receipt">Bench receipt: (working it out)</p></footer>
+<script src="../h30.js"></script>
+</body>
+</html>

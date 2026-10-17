@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bench Travel · Book</title>
+<link rel="stylesheet" href="../h30.css">
+</head>
+<body data-page="book">
+<div class="banner">Lila test site for benchmarking. Every name, address and number here is made up; nothing is sent, booked or bought.</div>
+<header><strong>Bench Travel</strong><a href="../h30/travel/">Search flights</a><a href="../h30/travel/profile.html">My profile</a></header>
+<main>
+<h1>Your trip</h1><p id="summary" class="card"></p>
+<form class="card" id="booking" onsubmit="return false"><h2>Extras</h2>
+<label class="check"><input type="checkbox" name="carryOn" value="yes"> Carry-on bag ($35)</label><label class="check"><input type="checkbox" name="checkedBag" value="yes"> Checked bag ($45)</label>
+<label for="seat">Seat</label><select id="seat" name="seat"><option value="">Any seat (free)</option><option value="window">Window ($15)</option><option value="aisle">Aisle ($15)</option></select>
+<h2>Traveller</h2><label for="name">Full name (as on your ID)</label><input id="name" name="name" autocomplete="off"><label for="dob">Date of birth</label><input id="dob" name="dob" type="date">
+<label for="email">Email</label><input id="email" name="email" type="email" autocomplete="off"><label for="flyer">Frequent flyer number (optional)</label><input id="flyer" name="flyer" autocomplete="off">
+<p class="errors" id="booking-error" hidden>Name, date of birth and email are needed.</p>
+<div><button type="button" id="pay">Pay now</button><button type="button" class="plain" id="hold">Hold for 24 hours (free)</button></div></form>
+</main>
+
+<footer><p id="bench-record" role="note" class="record">Test record for the benchmark's checks.</p><p id="bench-receipt" class="record receipt">Bench receipt: (working it out)</p></footer>
+<script type="application/json" id="bench-data">{"flights":[{"id":"BT101","departs":"06:40","arrives":"08:25","stops":0,"cents":18900},{"id":"BT215","departs":"09:35","arrives":"11:20","stops":0,"cents":21400},{"id":"BT233","departs":"10:10","arrives":"14:05","stops":1,"cents":15900},{"id":"BT317","departs":"13:20","arrives":"15:05","stops":0,"cents":23800},{"id":"BT402","departs":"17:45","arrives":"19:30","stops":0,"cents":22600},{"id":"BT488","departs":"20:30","arrives":"00:15","stops":1,"cents":17100}],"route":{"from":"BOS","fromName":"Boston (BOS)","to":"ORD","toName":"Chicago (ORD)","date":"2026-11-12"}}</script>
+<script src="../h30.js"></script>
+</body>
+</html>

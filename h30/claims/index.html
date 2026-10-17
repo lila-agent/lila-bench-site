@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bench Claims · Make a claim</title>
+<link rel="stylesheet" href="../h30.css">
+</head>
+<body data-page="">
+<div class="banner">Lila test site for benchmarking. Every name, address and number here is made up; nothing is sent, booked or bought.</div>
+<header><strong>Bench Claims</strong><a href="../h30/claims/">Make a claim</a></header>
+<main>
+<h1>Make a home insurance claim</h1>
+<form class="card" data-form="claim" data-done="done.html"><div class="errors" hidden></div>
+<label for="policy">Policy number</label><input id="policy" name="policy" required data-label="Policy number" autocomplete="off">
+<label for="incident">Date of the incident</label><input id="incident" name="incident" type="date" required data-label="Date of the incident">
+<label for="description">What happened</label><textarea id="description" name="description" required data-label="What happened"></textarea>
+<label for="amount">Amount claimed (US dollars)</label><input id="amount" name="amount" required data-label="Amount claimed" data-pattern="^\$?[0-9,]+(\.[0-9]{2})?$" data-message="Write the amount like 1234.56." autocomplete="off">
+<label for="photo">Photo of the damage</label><input id="photo" name="photo" type="file" accept="image/*" required data-label="Photo of the damage">
+<div><button type="submit">Submit claim</button></div></form>
+</main>
+
+<footer><p id="bench-record" role="note" class="record">Test record for the benchmark's checks.</p><p id="bench-receipt" class="record receipt">Bench receipt: (working it out)</p></footer>
+<script src="../h30.js"></script>
+</body>
+</html>

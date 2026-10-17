@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bench Travel · Search flights</title>
+<link rel="stylesheet" href="../h30.css">
+</head>
+<body data-page="flights">
+<div class="banner">Lila test site for benchmarking. Every name, address and number here is made up; nothing is sent, booked or bought.</div>
+<header><strong>Bench Travel</strong><a href="../h30/travel/">Search flights</a><a href="../h30/travel/profile.html">My profile</a></header>
+<main>
+<h1>Search flights</h1>
+<form class="card" method="get" action=""><div class="row"><div><label for="from">From</label><select id="from" name="from"><option value="">Choose</option><option value="BOS">Boston (BOS)</option><option value="ORD">Chicago (ORD)</option><option value="JFK">New York (JFK)</option><option value="SFO">San Francisco (SFO)</option></select></div>
+<div><label for="to">To</label><select id="to" name="to"><option value="">Choose</option><option value="BOS">Boston (BOS)</option><option value="ORD">Chicago (ORD)</option><option value="JFK">New York (JFK)</option><option value="SFO">San Francisco (SFO)</option></select></div>
+<div><label for="date">Date</label><input id="date" name="date" type="date"></div></div>
+<div class="row"><label class="check"><input id="direct" name="direct" type="checkbox" value="1"> Direct flights only</label><label for="sort" style="margin:0">Sort by</label><select id="sort" name="sort" style="max-width:200px"><option value="depart">Departure time</option><option value="price">Price</option></select></div>
+<button>Search</button></form><div class="card" id="list"></div>
+</main>
+
+<footer><p id="bench-record" role="note" class="record">Test record for the benchmark's checks.</p><p id="bench-receipt" class="record receipt">Bench receipt: (working it out)</p></footer>
+<script type="application/json" id="bench-data">{"flights":[{"id":"BT101","departs":"06:40","arrives":"08:25","stops":0,"cents":18900},{"id":"BT215","departs":"09:35","arrives":"11:20","stops":0,"cents":21400},{"id":"BT233","departs":"10:10","arrives":"14:05","stops":1,"cents":15900},{"id":"BT317","departs":"13:20","arrives":"15:05","stops":0,"cents":23800},{"id":"BT402","departs":"17:45","arrives":"19:30","stops":0,"cents":22600},{"id":"BT488","departs":"20:30","arrives":"00:15","stops":1,"cents":17100}],"route":{"from":"BOS","fromName":"Boston (BOS)","to":"ORD","toName":"Chicago (ORD)","date":"2026-11-12"}}</script>
+<script src="../h30.js"></script>
+</body>
+</html>

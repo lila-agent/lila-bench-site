@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bench Office Mail · New message</title>
+<link rel="stylesheet" href="../h30.css">
+</head>
+<body data-page="compose" data-mailbox="office">
+<div class="banner">Lila test site for benchmarking. Every name, address and number here is made up; nothing is sent, booked or bought.</div>
+<header><strong>Bench Office Mail</strong><a href="../h30/office/">Inbox</a><a href="../h30/office/drafts.html">Drafts</a><a href="../h30/office/sent.html">Sent</a><a href="../h30/office/compose.html">Compose</a></header>
+<main>
+<h1 id="heading">New message</h1>
+<form class="card" id="compose" onsubmit="return false">
+<label for="to">To</label><input id="to" name="to" autocomplete="off"><label for="subject">Subject</label><input id="subject" name="subject" autocomplete="off">
+<label for="body">Message</label><textarea id="body" name="body"></textarea>
+<label for="attach">Attach files</label><input id="attach" name="attach" type="file" multiple><ul id="attached"></ul>
+<div><button type="button" id="send">Send</button><button type="button" class="plain" id="save">Save draft</button><a class="button plain" href="index.html">Discard</a> <span id="saved" class="muted" role="status"></span></div></form>
+<div class="card muted" id="quoted"></div>
+</main>
+
+<footer><p id="bench-record" role="note" class="record">Test record for the benchmark's checks.</p><p id="bench-receipt" class="record receipt">Bench receipt: (working it out)</p></footer>
+<script type="application/json" id="bench-data">{"mail":[{"id":"f1","from":"Priya Raman","address":"priya.raman@lila-bench.example","subject":"September invoices","date":"16 Oct 2026, 10:05","body":"Hi,\n\nCould you send me the September invoices as a spreadsheet when you get a minute? Totals by vendor would help, and flag anything over $1,000 so I can check it.\n\nThanks,\nPriya"},{"id":"f2","from":"Jonas Berg","address":"jonas.berg@harborpaper.example","subject":"Our W-9 details for your vendor form","date":"15 Oct 2026, 14:48","body":"Hello,\n\nFor your vendor registration: our Tax ID (EIN) is 47-3920581. Everything else is on our supplier listing.\n\nBest,\nJonas Berg\nHarbor Paper Co."},{"id":"f3","from":"Bench Home","address":"orders@bench-home.example","subject":"Your order 7781 has been delivered","date":"14 Oct 2026, 17:20","body":"Your order 7781 was delivered today.\n\nOrder number: 7781\nEmail on the order: alex.morgan@example.com\nItems: Brass Desk Lamp, Dot Grid Notebook Set, Ceramic Vase\n\nSomething wrong? Start a return at our returns page within 30 days."},{"id":"f4","from":"Patel Dental","address":"reception@patel-dental.example","subject":"Appointment reminder","date":"13 Oct 2026, 09:00","body":"This is a reminder of your check-up with Dr. Patel. If you need to move it, just reply with a new day and time.\n\nPatel Dental reception"},{"id":"f5","from":"Marcus Lee","address":"marcus.lee@example.net","subject":"Invoices folder","date":"12 Oct 2026, 16:15","body":"I put last month's invoices in the shared folder. The August ones are still in there too, so watch out."}]}</script>
+<script src="../h30.js"></script>
+</body>
+</html>

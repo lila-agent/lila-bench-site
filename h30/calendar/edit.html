@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bench Calendar · Edit event</title>
+<link rel="stylesheet" href="../h30.css">
+</head>
+<body data-page="event">
+<div class="banner">Lila test site for benchmarking. Every name, address and number here is made up; nothing is sent, booked or bought.</div>
+<header><strong>Bench Calendar</strong><a href="../h30/calendar/">Calendar</a></header>
+<main>
+<h1 id="title">Edit event</h1><form class="card" id="event">
+<label for="date">Date</label><input id="date" type="date"><label for="start">Starts</label><select id="start"><option value="8">8:00 am</option><option value="8.5">8:30 am</option><option value="9">9:00 am</option><option value="9.5">9:30 am</option><option value="10">10:00 am</option><option value="10.5">10:30 am</option><option value="11">11:00 am</option><option value="11.5">11:30 am</option><option value="12">12:00 pm</option><option value="12.5">12:30 pm</option><option value="13">1:00 pm</option><option value="13.5">1:30 pm</option><option value="14">2:00 pm</option><option value="14.5">2:30 pm</option><option value="15">3:00 pm</option><option value="15.5">3:30 pm</option><option value="16">4:00 pm</option><option value="16.5">4:30 pm</option><option value="17">5:00 pm</option><option value="17.5">5:30 pm</option><option value="18">6:00 pm</option></select>
+<label for="hours">Length</label><select id="hours"><option value="0.5">30 minutes</option><option value="1">1 hour</option><option value="1.5">1.5 hours</option><option value="2">2 hours</option><option value="4">4 hours</option></select><div><button>Save</button></div></form>
+</main>
+
+<footer><p id="bench-record" role="note" class="record">Test record for the benchmark's checks.</p><p id="bench-receipt" class="record receipt">Bench receipt: (working it out)</p></footer>
+<script type="application/json" id="bench-data">{"events":[{"id":"dentist","title":"Dentist (Dr. Patel)","week":1,"day":3,"start":15,"hours":1},{"id":"standup","title":"Team stand-up","week":0,"day":0,"start":9,"hours":0.5},{"id":"review","title":"Budget review","week":0,"day":2,"start":14,"hours":1},{"id":"offsite","title":"Planning offsite","week":1,"day":0,"start":13,"hours":4},{"id":"call","title":"Supplier call","week":1,"day":1,"start":13,"hours":1},{"id":"lunch","title":"Lunch with Marcus","week":1,"day":1,"start":12,"hours":1},{"id":"gym","title":"Gym","week":1,"day":2,"start":7,"hours":1},{"id":"workshop","title":"Design workshop","week":1,"day":3,"start":15,"hours":2}]}</script>
+<script src="../h30.js"></script>
+</body>
+</html>

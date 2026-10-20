@@ -9,5 +9,5 @@ header span{opacity:.8;font-size:14px}main{max-width:980px;margin:12px auto;padd
 .row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:4px 0;border-top:1px dashed #d8d3e3}.add{grid-column:1/-1;justify-self:start}
 .tip{color:#a39fb0;font-size:11px;margin:6px 0}.problems{color:#a1261e;font-weight:600;min-height:1em;margin:6px 0}.nav{display:flex;gap:10px;margin:8px 0 18px}
 button{font:inherit;padding:6px 16px;border-radius:6px;border:1px solid #3b3561;background:#3b3561;color:#fff;cursor:pointer}button[data-back]{background:#fff;color:#3b3561}
-button:disabled{opacity:.45;cursor:not-allowed}dl{display:grid;grid-template-columns:max-content 1fr;gap:2px 14px;font-size:14px;margin:0 0 10px}dt{font-weight:600}dd{margin:0}
+button:disabled{opacity:.45;cursor:not-allowed}dl{display:grid;grid-template-columns:repeat(2,max-content minmax(0,1fr));gap:1px 12px;font-size:13px;margin:0 0 8px}dt{font-weight:600}dd{margin:0}
 .record{font-size:11px;color:#8a8597;padding:0 20px}
